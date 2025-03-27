@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <style>
+        /* Estilo para el fondo de la aplicación */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('../img/eventobk.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el menú de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Estilo para el footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para la imagen de la cabecera */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para la sección de contenido */
+        .content {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            padding-bottom: 60px; /* Espacio para evitar solapamiento con el footer */
+        }
+
+        .content img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para la caja de texto */
+        .text-box {
+            display: flex;
+            align-items: center;
+            background-color: #bcb7b7;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-box img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .text-box div {
+            flex: 1;
+        }
+
+        .text-box button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .text-box button:hover {
+            background-color: #45a049;
+        }
+
+        /* Media queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .text-box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-box img {
+                max-width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Portada con imagen -->
+    <header>
+        <img src="../img/eventobk.jpeg" alt="Imagen de portada">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="store.html">Tienda</a></li>
+            <li><a href="event.html">Evento</a></li>
+            <li><a href="social-media.html">Redes Sociales</a></li>
+            <li><a href="location.html">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div class="text-box">
+            <img src="../img/eventomain.jpeg" alt="Evento principal">
+            <div>
+                <h2>Velada de Muay Thai</h2>
+                <p>El próximo 01 de Julio de 2025, se organizará una emocionante velada de Muay Thai en el polideportivo de Estepona. Este evento contará con la participación de destacados luchadores y se espera la asistencia de más de 500 personas.</p>
+                <p>¡No te pierdas esta oportunidad única de disfrutar de un espectáculo lleno de acción y adrenalina!</p>
+                <p>Precio de la entrada: <strong>20 €</strong></p>
+                <button>Reservar Entrada</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Celeste Rubio 2025</p>
+    </footer>
+</body>
+</html>

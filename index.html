@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <style>
+        /* Estilo para el fondo de la aplicación */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img/PortadaVertical.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el menú de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Estilo para el footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para la imagen de la cabecera */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para la sección de contenido */
+        .content {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            padding-bottom: 60px; /* Espacio para evitar solapamiento con el footer */
+        }
+
+        .content img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content iframe {
+            width: 80%;
+            height: 80vw; /* Altura igual al ancho para que sea un cuadrado */
+            max-height: 450px; /* Altura máxima para pantallas grandes */
+            border: none;
+            margin: 20px 0;
+        }
+
+        /* Estilo para la caja de texto */
+        .text-box {
+            background-color: #bcb7b7;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .content img {
+                max-width: 100%; /* Imagen ocupa todo el ancho en pantallas pequeñas */
+            }
+
+            .content iframe {
+                width: 100%; /* Video ocupa todo el ancho en pantallas pequeñas */
+                height: 100vw; /* Altura igual al ancho para mantener el cuadrado */
+            }
+
+            .text-box {
+                max-width: 90%; /* Caja de texto más ancha en móviles */
+            }
+
+            footer {
+                font-size: 14px; /* Texto del footer más pequeño en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Portada con imagen -->
+    <header>
+        <img src="img/PortadaHorizontal.jpeg" alt="Imagen de portada">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="web-page-project/pages/store.html">Tienda</a></li>
+            <li><a href="web-page-project/pages/event.html">Evento</a></li>
+            <li><a href="web-page-project/pages/social-media.html">Redes Sociales</a></li>
+            <li><a href="web-page-project/pages/location.html">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <img src="img/organigrama.png" alt="Organigrama">
+        <div class="text-box">
+            <p>Este es nuestro organigrama, que muestra la estructura de nuestro equipo y cómo trabajamos juntos para alcanzar nuestros objetivos.</p>
+        </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Celeste Rubio 2025</p>
+    </footer>
+</body>
+</html>
+
+
+

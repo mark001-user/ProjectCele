@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <style>
+        /* Estilo para el fondo de la aplicación */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('../../img/PortadaVertical.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Estilo para el menú de navegación */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Estilo para el footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para la imagen de la cabecera */
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo para la sección de contenido */
+        .content {
+            text-align: center;
+            margin: 20px;
+            color: white;
+            padding-bottom: 60px; /* Espacio para evitar solapamiento con el footer */
+        }
+
+        .social-box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: #bcb7b7;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-box img {
+            max-width: 150px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-box img:hover {
+            transform: scale(1.1);
+        }
+
+        iframe {
+            width: 80%;
+            height: 450px;
+            border: none;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media queries para pantallas pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .social-box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            iframe {
+                width: 100%;
+                height: 300px;
+            }
+
+            footer {
+                font-size: 14px; /* Texto del footer más pequeño en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Portada con imagen -->
+    <header>
+        <img src="../../img/PortadaHorizontal.jpeg" alt="Imagen de portada">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="store.html">Tienda</a></li>
+            <li><a href="event.html">Evento</a></li>
+            <li><a href="social-media.html">Redes Sociales</a></li>
+            <li><a href="location.html">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Conéctate con nosotros</h1>
+        <div class="social-box">
+            <a href="https://eur04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com%2Fthebeast_muaythai%3Figsh%3DMTlwengybTRuaTB5NQ%253D%253D%26utm_source%3Dqr&data=05%7C02%7Cmperezor%40minsait.com%7C0c4df3c439284ec435e408dd6d25e9d9%7C7808e00514894374954bd3b08f193920%7C0%7C0%7C638786731934192073%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=lZqXt%2FMBEuEKqgYsTxUmMXvgSRbJ2BsYrfviUq9AUhQ%3D&reserved=0" target="_blank">
+                <img src="../img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/share/1NWFYzfwbZ/?mibextid=wwXIfr" target="_blank">
+                <img src="../img/facebook.png" alt="Facebook">
+            </a>
+            <a href="mailto:thebeast.muaythai.shop@gmail.com">
+                <img src="../img/email.png" alt="Email">
+            </a>
+        </div>
+        <!-- Video de YouTube -->
+        <iframe src="https://www.youtube.com/embed/zayzlduCce8?si=9h7HkOmz3NcIMBQt" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Celeste Rubio 2025</p>
+    </footer>
+</body>
+</html>
